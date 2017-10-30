@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
 }
 
+
 /* general */
 
 .container {
@@ -50,10 +51,11 @@ h3 {
   font-size: 22px;
 }
 
+
 /* header */
 
 #masthead {
-  /* position: fixed; */
+  position: fixed;
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
@@ -96,6 +98,7 @@ nav a:first-child {
   border-left: 0 none;
 }
 
+
 /* footer */
 
 footer {
@@ -108,6 +111,7 @@ footer {
   background: #666;
   border-top: 8px solid #4aaaa5;
 }
+
 
 /* sidebar */
 
@@ -140,6 +144,7 @@ h3,
   margin-right: 0;
 }
 
+
 /* main */
 
 #main-container {
@@ -155,6 +160,7 @@ h3,
   background: #fff;
   border: 1px solid #ddd;
 }
+
 
 /* portfolio page */
 
@@ -198,6 +204,7 @@ h3,
   margin-right: 25px;
 }
 
+
 /* contact page */
 
 #contact-form ul {
@@ -239,62 +246,72 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 980px) {
-
-  #main-container {
-    padding-top: 10px;
+  .container {
+    max-width: 700px;
   }
-/* Portfolio page images */
-/* .work {
-  max-width: 274px;
-  align-content: center;
-  float: clear;
-} */
+  .main-section {
+    max-width: 400px;
+  }
+/* Didn't work :(
+  .auth-image {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+  } */
+
+  /* Portfolio page images */
+  .work {
+    max-width: 300px;
+    align-content: center;
+    float: clear;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  #masthead {
+    position: static;
+  }
   #main-container {
     padding-top: 10px;
   }
-
   /* Sidebar nav; all pages. */
-.sidebar {
-  float: left;
-  max-width: 650px;
-}
+  .sidebar {
+    float: left;
+    max-width: 400px;
+  }
 }
 
 @media screen and (max-width: 640px) {
- 
+  #masthead {
+    position: static;
+  }
   #main-container {
     padding-top: 10px;
   }
-
- /* Header all pages. */
- .container {
-  width: 100%;
-  margin: 0 auto;
-  clear: both;
-}
- #logo {
-  width: 100%;
-  text-align: center;  
-}
-
+  /* Header all pages. */
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+  }
+  #logo {
+    width: 100%;
+    text-align: center;
+  }
   nav {
-  width: 100%; 
-  float: clear;
-  text-align: center;
-}
-
-/* Sidebar nav; all pages. */
-.sidebar {
-  float: left;
-  max-width: 640px;
-}
+    width: 100%;
+    float: clear;
+    text-align: center;
+  }
+  /* Sidebar nav; all pages. */
+  .sidebar {
+    float: left;
+    max-width: 400px;
+  }
   /* Portfolio page images */
-.work {
-  max-width: 640px;
-  align-content: center;
-  float: clear;
-}
+  .work {
+    max-width: 640px;
+    align-content: center;
+    float: clear;
+  }
 }
